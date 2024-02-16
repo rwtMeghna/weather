@@ -2,35 +2,6 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 import WeatherCard from "./WeatherCard";
-// const SearchBar = ({ onSearch }) => {
-//   const [searchValue, setSearchvalue] = useState("");
-//   const handleSearch = () => {
-//     onSearch(searchValue);
-//   };
-
-//   return (
-//     <div className="search-bar">
-//       <input
-//         type="text"
-//         placeholder="Enter city name"
-//         value={searchValue}
-//         onChange={(e) => {
-//           setSearchvalue(e.target.value);
-//         }}
-//       />
-//       <button onClick={handleSearch}>Search</button>
-//     </div>
-//   );
-// };
-
-// const WeatherCard = ({ title, value }) => {
-//   return (
-//     <div className="weather-card">
-//       <h1>{title}</h1>
-//       <p>{value}</p>
-//     </div>
-//   );
-// };
 
 export default function WeatherDisplay  ({ city }) {
   const [weatherData, setWeatherdata] = useState(null);
